@@ -17,6 +17,8 @@ awesomeness of `libzmq` (message passing semantics). At a high level it provides
 Here is a simple example demonstrating some powerful abstractions of `fbzmq`
 which makes writing asynchronous applications easier on top of `libzmq`
 
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./examples/app.cpp) -->
+<!-- The below code snippet is automatically added from ./examples/app.cpp -->
 ```cpp
 // Create context
 fbzmq::Context context{1};
@@ -59,8 +61,8 @@ timeout->scheduleTimeout(std::chrono::seconds(10), true /* periodic */);
 
 // Let the magic begin
 evl.run()
-
 ```
+<!-- MARKDOWN-AUTO-DOCS:END -->
 
 ## Requirements
 We have tried `fbzmq` on `Ubuntu-14.04`, `Ubuntu-16.04` and `CentOS-7`. This
